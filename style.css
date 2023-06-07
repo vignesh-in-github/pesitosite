@@ -1,0 +1,113 @@
+/*!
+Theme name : Pesito
+Description : Custom theme for food delivery Pesito
+Author : Socialbeat
+Author URI : https://socialbeat.in
+Version : 1.0.0
+Theme URI : https://socialbeat.in/pesito
+//*! */
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+#dynamic-bg{
+    min-height: 100vh;
+	background: linear-gradient(
+		-45deg,
+		rgba(103, 58, 183, 0.9),
+		rgba(255, 87, 34, 0.7),
+		rgba(103, 58, 183, 0.9),
+		rgba(255, 87, 34, 0.7)
+	);
+	background-size: 500% 500%;
+	animation: Gradient 50s ease infinite;
+	position: relative;
+	z-index: 1;
+	display: flex;
+	align-items: center;
+	overflow: hidden;
+
+}
+#dynamic-bg::before {
+	content: "";
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	position: absolute;
+	background: url('http://pesito.unaux.com/wp-content/uploads/2023/06/bg-design.png') no-repeat scroll center bottom/cover;
+	z-index: -1;
+}
+.bg-gradient {
+	background: -o-linear-gradient(135deg, rgba(103, 58, 183, 0.9), rgba(0, 150, 136, 0.9), rgba(103, 58, 183, 0.9));
+	background: linear-gradient(-45deg, rgba(103, 58, 183, 0.9), rgba(0, 150, 136, 0.9), rgba(103, 58, 183, 0.9));
+	background-size: 400% 400%;
+	animation: Gradient 30s ease infinite;
+}
+@-webkit-keyframes Gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes Gradient {
+	0% {
+		background-position: 0% 50%;
+    }
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+#logo-con h1{
+    font-size:3.4rem;
+    font-weight: 900;
+    padding: 40px 0 20px 0;
+}
+#logo-con .btn{
+    background-color:rgb(199, 0, 67);
+    color:#fff;
+    width: 200px;
+    border: 0px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    border-radius: 0.275rem;
+    line-height: 1.917;
+    transition: 0.2s linear all;
+}
+#logo-con .btn:hover{
+    box-shadow: 0px 12px 32px rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+    transition: 0.2s linear all;
+}
+.phone-wrapper{
+        flex-shrink: 0;
+        box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2);
+        width: 380px;
+        height: 665px;
+        padding: 10px 7px;
+        border-radius: 20px;
+        background: #d9dee3;
+        align-self: center;
+        margin: -3.5rem 0 0 12rem;
+        position: relative;
+        transform: rotate(-15deg);
+        transition: 0.3s linear all;
+}
+.phone-rotate{
+    transition: 0.3s linear all;
+    transform: rotate(0deg);
+}
